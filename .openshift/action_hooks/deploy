@@ -14,9 +14,9 @@ if [ ! -d $OPENSHIFT_DATA_DIR/logs ]
 				mkdir logs
 fi
 
+export JAVA_HOME=$OPENSHIFT_DATA_DIR/jdk1.8.0_40
 export M2_HOME=$OPENSHIFT_DATA_DIR/apache-maven-3.2.3/
 export MAVEN_OPTS="-Xms384m -Xmx412m"
-export JAVA_HOME=$OPENSHIFT_DATA_DIR/jdk1.8.0_40
 export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$PATH
 java -version
 
