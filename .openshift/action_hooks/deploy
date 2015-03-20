@@ -22,4 +22,4 @@ java -version
 mvn -version
 
 cd $OPENSHIFT_REPO_DIR
-mvn -s settings.xml clean package
+$OPENSHIFT_DATA_DIR/apache-maven-3.2.3/bin/mvn -s settings.xml clean package
